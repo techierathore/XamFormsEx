@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿
 using Xamarin.Forms;
-
 namespace XamFormsEx
 {
-	public partial class App : Application
+    public partial class App : Application
 	{
+        public int ScreenCount = 0;
 		public App ()
 		{
 			InitializeComponent();
 
-			MainPage = new XamFormsEx.MainPage();
+			MainPage = new NavigationPage(new Pages.PagesHome());
 		}
 
 		protected override void OnStart ()

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:y="clr-namespace:XamFormsEx.Pages;assembly=XamFormsEx"
+             x:Class="XamFormsEx.Pages.CarouselPageEx">
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="Tab 1" >
+        <ContentPage.Content>
+            <StackLayout>
+                <StackLayout VerticalOptions = "Center">
+                    <Label HorizontalTextAlignment = "Center" Text = "Content Page One of Carsoul" />
+                    <Label  HorizontalTextAlignment = "Center" Text = "The Page class is a visual element that occupies most or all of the screen and contains a single child. A Xamarin.Forms.Page represents a View Controller in iOS or a Page in Windows Phone. On Android each page takes up the screen like an Activity, but Xamarin.Forms Pages are not Activities. These pages are also used as the bases of navigation for application UI." />
+                </StackLayout>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+    <y:ContentPageEx />
+    <ContentPage Title="Tab 3" >
+        <ContentPage.Content>
+            <StackLayout>
+                <StackLayout VerticalOptions = "Center">
+                    <Label HorizontalTextAlignment = "Center" Text = "Content Page  Three of Carsoul" />
+                    <Label  HorizontalTextAlignment = "Center" Text = "The Page class is a visual element that occupies most or all of the screen and contains a single child. A Xamarin.Forms.Page represents a View Controller in iOS or a Page in Windows Phone. On Android each page takes up the screen like an Activity, but Xamarin.Forms Pages are not Activities. These pages are also used as the bases of navigation for application UI." />
+                </StackLayout>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+</CarouselPage>
