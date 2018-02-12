@@ -6,13 +6,10 @@
         <StackLayout>
             <StackLayout VerticalOptions = "Center">
                 <Button Text="Content Page" Clicked="OnContentClicked" />
+                <Button Text="Master Detail Page" Clicked="OnMasterClicked" />
                 <Button Text="Tabbed Page" Clicked="OnTabbedClicked" />
                 <Button Text="Carasoul Page" Clicked="OnCarsoulClicked" />
-                <Button Text="Master Detail Page" Clicked="OnMasterClicked" />
-                <Button Text="Stack Layout Example" Clicked="OnStackClicked" />
-                <Button Text="Relative Layout" Clicked="OnRelativeClicked" />
-                <Button Text="Absolute Layout" Clicked="OnAbsClicked" />
-            </StackLayout>
+             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

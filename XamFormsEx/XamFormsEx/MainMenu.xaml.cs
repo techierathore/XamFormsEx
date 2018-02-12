@@ -2,13 +2,11 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 using XamFormsEx.Pages;
 
 namespace XamFormsEx
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MainMenu : ContentPage
+    public partial class MainMenu : ContentPage
 	{
         public ListView ListView { get { return lstMenuItems; } }
         public MainMenu()

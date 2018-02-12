@@ -1,14 +1,12 @@
 ﻿
 using System;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace XamFormsEx
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class HomePage : MasterDetailPage
+    public partial class AppHome : MasterDetailPage
 	{
-		public HomePage ()
+		public AppHome()
 		{
 			InitializeComponent ();
             MenuPage.ListView.ItemSelected += OnItemSelected;

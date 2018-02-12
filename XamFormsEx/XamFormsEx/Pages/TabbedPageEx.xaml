@@ -3,7 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamFormsEx.Pages.TabbedPageEx">
   <!--Pages can be added as references or inline-->
-  <ContentPage Title="Tab 1" />
-  <ContentPage Title="Tab 2" />
-  <ContentPage Title="Tab 3" />
+    <ContentPage Title="Tab 1" >
+        <ContentPage.Content>
+            <StackLayout VerticalOptions = "Center">
+                <Label HorizontalTextAlignment = "Center" Text = "First Tab Label One" />
+                <Label HorizontalTextAlignment = "Center" Text = "First Tab Label Two" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+    <ContentPage Title="Tab 2" >
+        <ContentPage.Content>
+            <StackLayout VerticalOptions = "Center">
+                <Label HorizontalTextAlignment = "Center" Text = "Second Tab Label One" />
+                <Label HorizontalTextAlignment = "Center" Text = "Second Tab Label Two" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+    <ContentPage Title="Tab 3" >
+        <ContentPage.Content>
+            <StackLayout VerticalOptions = "Center">
+                <Label HorizontalTextAlignment = "Center" Text = "Third Tab Label One" />
+                <Label HorizontalTextAlignment = "Center" Text = "Third Tab Label Two" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
 </TabbedPage>

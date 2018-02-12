@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamFormsEx.Layouts.FramesEx"
+             BackgroundColor="Aqua">
+    <ContentPage.Content>        
+        <StackLayout VerticalOptions="Center" Padding="15">
+            <Frame BackgroundColor="Red"
+     OutlineColor="White"
+     HasShadow="True"
+     Padding="15">
+                <Frame BackgroundColor="#F0F0F0"
+				   OutlineColor="Black"
+				   HasShadow="False"
+				   Padding="0,0,5,0">
+                    <!--contents-->
+                    <StackLayout VerticalOptions="CenterAndExpand" Padding="50">
+                        <Entry Placeholder ="Login Email"  HorizontalOptions="FillAndExpand" TextColor="Blue" />
+
+                        <Entry Placeholder ="Password" HorizontalOptions="FillAndExpand" TextColor="Blue" />
+                    </StackLayout>
+                    <!--/contents-->
+                </Frame>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

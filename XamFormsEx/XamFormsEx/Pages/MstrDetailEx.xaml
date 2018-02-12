@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamFormsEx.Pages.MstrDetailEx">
+    <MasterDetailPage.Master>
+        <ContentPage Title="DemoMaster" >
+            <ContentPage.Content>
+                <StackLayout VerticalOptions = "Center">
+                    <Label HorizontalTextAlignment = "Center" Text = "Master Label One" />
+                    <Label HorizontalTextAlignment = "Center" Text = "Master Label Two" />
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <ContentPage Title="Demo Detail" >
+            <ContentPage.Content>
+                <StackLayout VerticalOptions = "Center">
+                    <Label HorizontalTextAlignment = "Center" Text = "Detail Label One" />
+                    <Label HorizontalTextAlignment = "Center" Text = "Detail Label Two" />
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

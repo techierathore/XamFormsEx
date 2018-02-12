@@ -3,9 +3,9 @@ using Xamarin.Forms;
 
 namespace XamFormsEx.Pages
 {
-    public partial class ContentPageEx : ContentPage
+    public partial class MstrDetailEx : MasterDetailPage
 	{
-		public ContentPageEx ()
+		public MstrDetailEx ()
 		{
 			InitializeComponent ();
 		}

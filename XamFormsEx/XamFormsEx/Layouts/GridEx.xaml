@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamFormsEx.Layouts.GridEx">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="10" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"
+				Text="Kitchen Manager" FontSize="40"  />
+            <Label Grid.Row="1" Grid.Column="1" HorizontalTextAlignment = "Center" Text = "User Name" />
+            <Entry Grid.Row="1" Grid.Column="2" HorizontalTextAlignment = "Center"  Placeholder="User Name Entry" />
+            <Label Grid.Row="2" Grid.Column="1" HorizontalTextAlignment = "Center" Text = "Password" />
+            <Entry Grid.Row="2" Grid.Column="2" HorizontalTextAlignment = "Center"  IsPassword="True" Placeholder="Password" />
+            <Button Grid.Row="3" Grid.Column="1" Text="Login" />
+            <Button Grid.Row="3" Grid.Column="2" Text="Cancel" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
