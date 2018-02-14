@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:y="clr-namespace:XamFormsEx.Behaviors;assembly=XamFormsEx"
+             x:Class="XamFormsEx.Behaviors.BehaviorsHome">
+    <y:EmailVlidatorEx Title="Email" />
+    <y:NumericValidationEx Title="Numeric" />
+</TabbedPage>

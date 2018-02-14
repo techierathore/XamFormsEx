@@ -3,13 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamFormsEx.Pages.PagesHome">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout VerticalOptions = "Center">
-                <Button Text="Content Page" Clicked="OnContentClicked" />
-                <Button Text="Master Detail Page" Clicked="OnMasterClicked" />
-                <Button Text="Tabbed Page" Clicked="OnTabbedClicked" />
-                <Button Text="Carasoul Page" Clicked="OnCarsoulClicked" />
-             </StackLayout>
+        <StackLayout VerticalOptions = "Center">
+            <Button Text="Content Page" Clicked="OnContentClicked" />
+            <Button Style="{StaticResource MyAppButton}" Text="Master Detail Page" Clicked="OnMasterClicked" />
+            <Button Text="Tabbed Page" Clicked="OnTabbedClicked" />
+            <Button Text="Carasoul Page" Clicked="OnCarsoulClicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

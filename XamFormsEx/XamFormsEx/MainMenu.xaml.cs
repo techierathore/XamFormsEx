@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
+using XamFormsEx.Behaviors;
 using XamFormsEx.Pages;
+using XamFormsEx.Styles;
+using XamFormsEx.Templates;
+using XamFormsEx.Triggers;
 
 namespace XamFormsEx
 {
@@ -24,56 +28,68 @@ namespace XamFormsEx
             {
                 Title = "Layouts",
                 IconSource = "todo.png",
-                //TargetType = typeof(LayoutsHome)
+                TargetType = typeof(Layouts.LayoutHome)
             });
+            //vMenuItems.Add(new XamFormsMenuItem
+            //{
+            //    Title = "Views",
+            //    IconSource = "reminders.png",
+            //    // TargetType = typeof(XamFormsMenuItem)
+            //});
             vMenuItems.Add(new XamFormsMenuItem
             {
-                Title = "Views",
+                Title = "MarkUp Extensions",
                 IconSource = "reminders.png",
-               // TargetType = typeof(XamFormsMenuItem)
+               TargetType = typeof(MarkUpExtn.MarkUpExtHome)
             });
             vMenuItems.Add(new XamFormsMenuItem
             {
                 Title = "Styles",
                 IconSource = "reminders.png",
-                //TargetType = typeof(StylesHome)
+                TargetType = typeof(StylesHome)
             });
             vMenuItems.Add(new XamFormsMenuItem
             {
                 Title = "Triggers",
                 IconSource = "reminders.png",
-                //TargetType = typeof(TriggersHome)
+                TargetType = typeof(TriggersHome)
+            });
+            vMenuItems.Add(new XamFormsMenuItem
+            {
+                Title = "Templates",
+                IconSource = "reminders.png",
+                TargetType = typeof(TemplatesHome)
             });
             vMenuItems.Add(new XamFormsMenuItem
             {
                 Title = "Behaviors",
                 IconSource = "reminders.png",
-                //TargetType = typeof(BehaviorsEx)
+                TargetType = typeof(BehaviorsHome)
             });
-            vMenuItems.Add(new XamFormsMenuItem
-            {
-                Title = "Effects",
-                IconSource = "reminders.png",
-                //TargetType = typeof(EffectsHome)
-            });
-            vMenuItems.Add(new XamFormsMenuItem
-            {
-                Title = "Control Templates",
-                IconSource = "reminders.png",
-                //TargetType = typeof(TemplatesHome)
-            });
-            vMenuItems.Add(new XamFormsMenuItem
-            {
-                Title = "Controls Examples",
-                IconSource = "reminders.png",
-                //TargetType = typeof(ControlsExHome)
-            });
-            vMenuItems.Add(new XamFormsMenuItem
-            {
-                Title = "Misc",
-                IconSource = "reminders.png",
-                //TargetType = typeof(MiscHome)
-            });
+            //vMenuItems.Add(new XamFormsMenuItem
+            //{
+            //    Title = "Effects",
+            //    IconSource = "reminders.png",
+            //    //TargetType = typeof(EffectsHome)
+            //});
+            //vMenuItems.Add(new XamFormsMenuItem
+            //{
+            //    Title = "Control Templates",
+            //    IconSource = "reminders.png",
+            //    //TargetType = typeof(TemplatesHome)
+            //});
+            //vMenuItems.Add(new XamFormsMenuItem
+            //{
+            //    Title = "Controls Examples",
+            //    IconSource = "reminders.png",
+            //    //TargetType = typeof(ControlsExHome)
+            //});
+            //vMenuItems.Add(new XamFormsMenuItem
+            //{
+            //    Title = "Misc",
+            //    IconSource = "reminders.png",
+            //    //TargetType = typeof(MiscHome)
+            //});
             lstMenuItems.ItemsSource = vMenuItems;
         }
     }

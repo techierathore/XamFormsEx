@@ -5,10 +5,10 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
+                <RowDefinition Height=".05*" />
+                <RowDefinition Height=".02*" />
+                <RowDefinition Height=".02*" />
+                <RowDefinition Height=".02*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="10" />
@@ -22,8 +22,8 @@
             <Entry Grid.Row="1" Grid.Column="2" HorizontalTextAlignment = "Center"  Placeholder="User Name Entry" />
             <Label Grid.Row="2" Grid.Column="1" HorizontalTextAlignment = "Center" Text = "Password" />
             <Entry Grid.Row="2" Grid.Column="2" HorizontalTextAlignment = "Center"  IsPassword="True" Placeholder="Password" />
-            <Button Grid.Row="3" Grid.Column="1" Text="Login" />
-            <Button Grid.Row="3" Grid.Column="2" Text="Cancel" />
+            <Button Grid.Row="3" Grid.Column="1" BackgroundColor="Red" Text="Login" Margin="20" />
+            <Button Grid.Row="3" Grid.Column="2" BackgroundColor="Orange" Text="Cancel" Margin="20" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

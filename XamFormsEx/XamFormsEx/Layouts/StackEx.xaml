@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamFormsEx.Layouts.StackEx">
     <ContentPage.Content>
-        <StackLayout VerticalOptions ="CenterAndExpand">
+        <StackLayout Padding="25" VerticalOptions="CenterAndExpand">
             <Label HorizontalTextAlignment = "Center" Text = "Kitchen Management" />
             <StackLayout  VerticalOptions = "Center" HorizontalOptions="Center" Orientation="Horizontal" >
                 <Label HorizontalTextAlignment = "Center" Text = "User Name" />
@@ -14,7 +14,7 @@
                 <Entry HorizontalTextAlignment = "Center" IsPassword="True" Placeholder="Password" />
             </StackLayout>
             <StackLayout VerticalOptions = "Center" HorizontalOptions="Center" Orientation="Horizontal" >
-                <Button Text="Login" />
+                <Button Text="Login"  />
                 <Button Text="Cancel" />
             </StackLayout>
         </StackLayout>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamFormsEx.Styles.DynamicEx">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="PageExplicitStyle" TargetType="Label">
+                <Setter Property="HorizontalOptions"  Value="Center" />
+                <Setter Property="VerticalOptions"    Value="CenterAndExpand" />
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="TextColor" Value="Green" />
+            </Style>
+            <Style x:Key="RedStyle" TargetType="Label"   >
+                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="TextColor" Value="Red" />
+            </Style>
+            <Style x:Key="MyStyle" TargetType="Label"></Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Style="{DynamicResource MyStyle}" Text="Dynamic Styles are used to change the Style of a boject at runtime Click on 'Click Me' Buton to see the Change'"  />
+            <Label Style="{StaticResource PageExplicitStyle}" Text="See The XAML Code of this Page for example"  />
+            <Button Text="Click Me"  Clicked="OnClickMeClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
