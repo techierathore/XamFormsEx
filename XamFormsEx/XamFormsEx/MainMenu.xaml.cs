@@ -66,6 +66,12 @@ namespace XamFormsEx
                 IconSource = "reminders.png",
                 TargetType = typeof(BehaviorsHome)
             });
+            vMenuItems.Add(new XamFormsMenuItem
+            {
+                Title = "MVVM Ex",
+                IconSource = "reminders.png",
+                TargetType = typeof(MVVMEx.MvvmHome)
+            });
             //vMenuItems.Add(new XamFormsMenuItem
             //{
             //    Title = "Effects",

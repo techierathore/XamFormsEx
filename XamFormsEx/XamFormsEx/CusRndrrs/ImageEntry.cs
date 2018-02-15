@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-namespace XamFormsEx.UsrControl
+namespace XamFormsEx.CusRndrrs
 {
     public class ImageEntry : Entry
     {

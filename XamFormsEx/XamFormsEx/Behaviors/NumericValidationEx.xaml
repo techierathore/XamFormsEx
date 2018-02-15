@@ -3,14 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               xmlns:bhv="clr-namespace:XamFormsEx.Behaviors;assembly=XamFormsEx" 
              x:Class="XamFormsEx.Behaviors.NumericValidationEx">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="NumericValidationStyle" TargetType="Entry">
+                <Style.Setters>
+                    <Setter Property="bhv:NumericValidation.AttachBehavior" Value="true" />
+                </Style.Setters>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout Padding="0,20,0,0">
+        <StackLayout Padding="10,20,10,0">
             <Label Text="Red when the number isn't valid" FontSize="Small" />
-            <Entry Placeholder="Enter a System.Double">
-                <Entry.Behaviors>
-                    <bhv:NumericValidationBehavior />
-                </Entry.Behaviors>
-            </Entry>
+            <Entry Placeholder="Enter a System.Double" 
+                   bhv:NumericValidationBehavior.AttachBehavior ="true"/>
+            <Label Text="This one is Done using Styles : Again Red when the number isn't valid" FontSize="Small" />
+            <Entry Placeholder="Enter a System.Double" Style="{StaticResource NumericValidationStyle}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
