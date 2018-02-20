@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace XamFormsEx.MarkUpExtn
 {
-	public partial class ImageSourceEx : ContentPage
+    public partial class ImageSourceEx : ContentPage
 	{
 		public ImageSourceEx ()
 		{

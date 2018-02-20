@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace XamFormsEx.MarkUpExtn
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ArrayDemo : ContentPage
+    public partial class ArrayDemo : ContentPage
 	{
 		public ArrayDemo ()
 		{
